@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bot-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bot-service
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: bot-service
+    spec:
+      containers:
+        - name: bot-service
+          image: louis70109/line-echo-bot-python:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: LINE_CHANNEL_SECRET
+              value: 'YOUR_SECRET'
+            - name: LINE_CHANNEL_ACCESS_TOKEN
+              value: 'YOUR_TOKEN'
