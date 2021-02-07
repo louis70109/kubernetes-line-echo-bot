@@ -18,6 +18,11 @@ First, you can access `localhost:8082/`(GET), if see a `World` string, it was su
 
 For LINE bot testing, you can use `ngrok` to create a temporary url and input in [LINE Developer Console](https://developers.line.biz/console/) endpoint column, then send requests for your chatbot, it would echo you same words 🗣.
 
+# Note
+
+- Kubernetes’ default NodePort range is 30000-32767
+  - https://k3d.io/usage/guides/exposing_services/
+
 # LICENSE
 
 MIT
