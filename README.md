@@ -4,7 +4,7 @@ My environment is MacOS, so it depends on [k3d](https://github.com/rancher/k3d) 
 
 - Create cluster
 
-  - `k3d cluster create nijiacluster --agents 1 -p '8082:30080@agent[0]'`
+  - `k3d cluster create mycluster --agents 1 -p '8082:30080@agent[0]'`
   - Using NodePort to forward the k3d container.
 
 - Input your LINE Chatbot key in `bot_service.yml` environment property.
