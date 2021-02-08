@@ -1,6 +1,6 @@
 # Kubernetes practice 1 - LINE echo bot
 
-My environment is MacOS, so I use [k3d](https://github.com/rancher/k3d) for local testing.
+My environment is MacOS, so it depends on [k3d](https://github.com/rancher/k3d) for local testing.
 
 - Create cluster
 
@@ -14,14 +14,14 @@ My environment is MacOS, so I use [k3d](https://github.com/rancher/k3d) for loca
 
 ![](https://github.com/louis70109/kubernetes-line-echo-bot/blob/master/README.png)
 
-First, you can access `localhost:8082/`(GET), if see a `World` string, it was success.
+First, you can access `localhost:8082/`(GET), you would see a `World` string.
 
 For LINE bot testing, you can use `ngrok` to create a temporary url and input in [LINE Developer Console](https://developers.line.biz/console/) endpoint column, then send requests for your chatbot, it would echo you same words 🗣.
 
 # Note
 
-- Kubernetes’ default NodePort range is 30000-32767
-  - https://k3d.io/usage/guides/exposing_services/
+- Kubernetes’ default NodePort range is **30000-32767**.
+  - [Reference](https://k3d.io/usage/guides/exposing_services/)
 
 # LICENSE
 
