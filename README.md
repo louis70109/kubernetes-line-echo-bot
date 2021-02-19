@@ -1,5 +1,7 @@
 # Kubernetes practice 1 - LINE echo bot
 
+![](https://raw.githubusercontent.com/louis70109/kubernetes-line-echo-bot/master/flow.png)
+
 My environment is MacOS, so it depends on [k3d](https://github.com/rancher/k3d) for local testing.
 
 - Create cluster
