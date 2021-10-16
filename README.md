@@ -12,7 +12,7 @@ My environment is MacOS, so it depends on [k3d](https://github.com/rancher/k3d) 
 - Input your LINE Chatbot key in `bot_service.yml` environment property.
   - Create service: `kubectl apply -f bot_service.yml`
 - Forward and let k3d service know the service.
-  - `kebectl apply -f forward.yml`
+  - `kubectl apply -f forward.yml`
 
 ![](https://github.com/louis70109/kubernetes-line-echo-bot/blob/master/README.png)
 
